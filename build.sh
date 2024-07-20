@@ -30,9 +30,9 @@ export CFLAGS='-O3'
 ./configure \
             --prefix=$TCC_FOLDER \
             --bindir=$TCC_FOLDER \
-            --crtprefix=$TCC_FOLDER/lib:/usr/lib:/usr/lib64 \
+            --crtprefix=$TCC_FOLDER/lib:/usr/lib \
             --sysincludepaths=$TCC_FOLDER/lib/tcc/include:/usr/local/include:/usr/include \
-            --libpaths=$TCC_FOLDER/lib/tcc:$TCC_FOLDER/lib:/usr/lib64:/usr/lib:/lib:/usr/local/lib \
+            --libpaths=$TCC_FOLDER/lib/tcc:$TCC_FOLDER/lib:/usr/local/lib:/usr/lib:/lib \
             --cc="$CC" \
             --extra-cflags="$CFLAGS" \
 	    --config-backtrace=yes \
